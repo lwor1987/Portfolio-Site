@@ -1,0 +1,155 @@
+body {
+  background-color: #90EE90;
+  }
+
+body {
+  font-family: 'Lato' , sans-serif;
+  font-weight: 400;
+  font-size: 1.5em;
+  line-height:1.6;
+}
+
+ h1{
+   font-size: 1.5em;
+   font-weight: 400;
+ }
+
+a {
+  color: #4933FF;
+}
+
+a:visited {
+  /* visited link */
+  color: #6f235f;
+}
+
+a:hover, a:focus  {
+  /* No underlining when hovering over a link */
+  text-decoration: none;
+}
+
+a:active {
+  /* selected link */
+  color: #ff8cb9;
+}
+
+.button {
+  /* overwrites browser defaults and resets the border */
+  border: none;
+  /* takes the font from the outer container */
+  font-family: inherit;
+  /* styles the background color, font color, and text decoration (underline, etc.) of the button */
+  background-color:#357b70;
+  color: white;
+  text-decoration: none;
+  /*adds spacing to the button (this will be discussed more in-depth later) */
+  padding: 10px;
+  border-radius: 3px;
+  /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  -webkit-transition-duration: 0.2s;
+       -o-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+  -webkit-transition-property: opacity;
+  -o-transition-property: opacity;
+  transition-property: opacity;
+}
+
+
+button-hover,
+button:focus,
+.button:hover,
+.button:focus {
+ cursor: hand;
+ opacity: 0.8;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.page-footer {
+  margin: 0 auto;
+  text-align: center;
+  width: 10%;
+}
+
+.profile__text {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100px;
+            flex: 1 1 100px;
+}
+
+.page-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: 20px;
+}
+
+.page-header__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 100px;
+          flex: 0 1 100px;
+}
+
+.page-header__item:last-child {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-align: center;
+}
+
+.navigation-list {
+  list-style-type: none;
+}
+
+.navigation-list li {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.profile_portrait {
+   float:left;
+}
+
+
+.profile {
+  min-width: 360px;
+  max-width: 1200px;
+}
+
+.grid {
+  display: -ms-inline-grid;
+  display: inline-grid;
+}
+
+.grid__item {
+  background-color: lightgray;
+}
+
+.grid {
+  display: -ms-inline-grid;
+  display: inline-grid;
+  -ms-grid-columns:1fr 50px 1fr 50px 1fr;
+  grid-template-columns:1fr 1fr 1fr;
+  grid-gap: 50px;
+  border-radius: 5px;
+}
+.grid__item:last-child {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  -ms-grid-column-span: 1;
+  grid-column-end: 2;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  -ms-grid-row-span: 1;
+  grid-row-end: 2;
+}
+.grid__item {
+ display: -ms-inline-grid;
+ display: inline-grid;
+ width: 100%;
+}
