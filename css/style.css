@@ -78,8 +78,14 @@ button:focus,
   width: 10%;
 }
 
+.profile {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
 .profile__text {
     flex: 1 1 100px;
+    text-align: center;
 }
 
 .page-header {
@@ -99,15 +105,18 @@ button:focus,
 
 .navigation-list {
   list-style-type: none;
+  text-align: center;
 }
 
 .navigation-list li {
-  display: inline-block;
-  margin-left: 15px;
+  display: inline=block;
 }
 
 .profile_portrait {
    float:left;
+   width: 250px;
+   margin-right: 40px;
+   border-radius: 50%;
 }
 
 
@@ -181,9 +190,7 @@ button:focus,
   animation-timing-function: linear;
 }
 
-.sun{
-  animation: 4s color-change infinte alternate linear;
-}
+
 @keyframes cloud-move{
   from{
     transform:translat(0,50px);
@@ -192,10 +199,14 @@ button:focus,
     transform:translate(200px, 500px);
   }
 }
-
-.cloud-front{
-  animation:30s cloud-move infinite alternate linear;
+.cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
 }
+
 @keyframes cloud-move-reverse {
   from{
     transform: translate(446px,48px):matrix();
@@ -204,6 +215,6 @@ button:focus,
     transform: translate(100px,48px);
   }
 }
-  .cloud-back{
+.cloud-back{
     animation: 34s cloud-move-reverse infinite alternate linear;
   }
