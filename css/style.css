@@ -85,7 +85,7 @@ button:focus,
 
 .profile__text {
     flex: 1 1 100px;
-    text-align: center;
+
 }
 
 .page-header {
@@ -119,6 +119,11 @@ button:focus,
    border-radius: 50%;
 }
 
+body {
+
+text-align: center;
+
+}
 
 .profile {
   min-width: 360px;
